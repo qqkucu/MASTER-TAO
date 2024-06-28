@@ -1,0 +1,426 @@
+@@include('templates/head.html')
+@@include('templates/header.html')
+<main class="wrapper home">
+    <section class="first-screen">
+        <div class="swiper-info">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide" style="background-image: url(assets/img/slide-1.png);">
+                    <div class="container">
+                        <div class="swiper-info__banner">
+                            <h1 class="swiper-info__banner__title">Пряме карго з Китаю</h1>
+                            <h5 class="swiper-info__banner__description fw-300">Доставляємо будь-який вантаж з Китаю за честною ціною
+        </h5>
+                            <button type="button" class="btn btn-primary btn-lg btn-with-icon">Розрахувати вартість
+                                <img class="icon-button-arrow" src="assets/img/icon-arrow-1.svg" alt="arrow">
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide" style="background-image: url(assets/img/slide-2.png);">
+                    <div class="container">
+                        <div class="swiper-info__banner">
+                            <h2 class="swiper-info__banner__title">Викуп товару з TaoBao, 1688</h2>
+                            <h5 class="swiper-info__banner__description fw-300">Викуп та доставка товарів з китайських торгівельних
+          майданчиків</h5>
+                            <button type="button" class="btn btn-primary btn-lg btn-with-icon">Розрахувати вартість
+                                <img class="icon-button-arrow" src="assets/img/icon-arrow-1.svg" alt="arrow">
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide" style="background-image: url(assets/img/slide-3.png);">
+                    <div class="container">
+                        <div class="swiper-info__banner">
+                            <h2 class="swiper-info__banner__title">Експрес авто доставка</h2>
+                            <button type="button" class="btn btn-primary btn-lg btn-with-icon">Розрахувати вартість
+                                <img class="icon-button-arrow" src="assets/img/icon-arrow-1.svg" alt="arrow">
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="swiper-pagination"></div>
+            <div class="swiper-info__arrows">
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-button-next"></div>
+            </div>
+
+        </div>
+
+    </section>
+    <a class="markup" href="markup.html">markup</a>
+    <div class="section__block">
+        <section class="section__content container">
+
+            <div class="section__title section__title_half">
+                <h2>Отримати розрахунок вартості доставки вашого вантажу</h2>
+            </div>
+            <div class="calculation__block position-relative">
+                <form class="calucation__form">
+                    <div class="form__row">
+                        <div class="form__column">
+                            <div class="input-box">
+                                <label for="product-category">Категорія товару:</label>
+                                <input type="text" id="product-category" placeholder="Категорія товару">
+                            </div>
+
+                            <div class="input-box">
+                                <label for="cargo-weight">Вага вантажу (кг):</label>
+                                <input type="text" id="cargo-weight" placeholder="Введіть вагу">
+                            </div>
+                        </div>
+
+                        <div class="form__column">
+                            <div class="input-box">
+                                <label for="cargo-cost">Вартість вантажу:</label>
+                                <input type="text" id="cargo-cost" placeholder="Введіть вартість">
+                            </div>
+
+                            <div class="input-box">
+                                <label for="cargo-volume">Об'єм вантажу (м3):</label>
+                                <input type="text" id="cargo-volume" placeholder="Введіть об'єм">
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="form__row">
+                        <div class="form__column">
+                            <div class="variation-box">
+                                <div class="control-box">
+                                    <input type="checkbox" id="insurance">
+                                    <label for="insurance">Страховка</label>
+                                </div>
+
+                                <div class="control-box">
+                                    <input type="checkbox" id="clearance">
+                                    <label for="clearance">Митне оформлення</label>
+                                </div>
+                            </div>
+
+                        </div>
+
+                        <div class="form__column">
+                            <div class="input-box">
+                                <label for="code">Код ТН ЗЕД:</label>
+                                <input type="text" id="code" placeholder="Введіть код">
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="form__row">
+                        <div class="form__column">
+                            <div class="input-box">
+                                <div class="file-name">1111</div>
+                                <input type="file" id="product-photos" class="input-box_input">
+                                <label for="product-photos" class="input-box_label">Завантажити фото товару</label>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="form__row">
+                        <div class="form__column">
+
+                            <button type="button" class="btn btn-primary btn-lg btn-with-icon">Наступний крок
+                                <img class="icon-button-arrow" src="assets/img/icon-arrow-1.svg" alt="arrow">
+                            </button>
+                        </div>
+                    </div>
+                </form>
+                <img class="calculation__img" src="assets/img/man-img.png" alt="">
+
+            </div>
+
+
+        </section>
+    </div>
+    <div class="section__block d-flex">
+        <section class="section__content container">
+            <div class="section__title">
+                <h2>Чому варто вибрати саме нас?</h2>
+            </div>
+
+
+            <div class="swiper-advantages">
+                <div class="swiper-wrapper">
+
+                    <div class="swiper-slide">
+                        <div class="advantage">
+                            <div class="advantage__img_box">
+                                <img src="assets/img/advantage-1.svg" alt="">
+                            </div>
+                            <h6 class="advantage__title">Митне оформлення вантажу</h6>
+                        </div>
+                    </div>
+
+                    <div class="swiper-slide">
+                        <div class="advantage">
+                            <div class="advantage__img_box">
+                                <img src="assets/img/advantage-2.svg" alt="">
+                            </div>
+                            <h6 class="advantage__title">Страхування вантажу</h6>
+                        </div>
+                    </div>
+
+                    <div class="swiper-slide">
+                        <div class="advantage">
+                            <div class="advantage__img_box">
+                                <img src="assets/img/advantage-3.svg" alt="">
+                            </div>
+                            <h6 class="advantage__title">Перевірка товару на брак</h6>
+                        </div>
+                    </div>
+
+                    <div class="swiper-slide">
+                        <div class="advantage">
+                            <div class="advantage__img_box">
+                                <img src="assets/img/advantage-4.svg" alt="">
+                            </div>
+                            <h6 class="advantage__title">Доставка в будь-яке місто України</h6>
+                        </div>
+                    </div>
+
+                    <div class="swiper-slide">
+                        <div class="advantage">
+                            <div class="advantage__img_box">
+                                <img src="assets/img/advantage-5.svg" alt="">
+                            </div>
+                            <h6 class="advantage__title">Консолідація на складі</h6>
+                        </div>
+                    </div>
+
+                    <div class="swiper-slide">
+                        <div class="advantage">
+                            <div class="advantage__img_box">
+                                <img src="assets/img/advantage-6.svg" alt="">
+                            </div>
+                            <h6 class="advantage__title">Відповідальне зберігання вантажу</h6>
+                        </div>
+                    </div>
+
+                    <div class="swiper-slide">
+                        <div class="advantage">
+                            <div class="advantage__img_box">
+                                <img src="assets/img/advantage-7.svg" alt="">
+                            </div>
+                            <h6 class="advantage__title">Допомога в оплаті товару</h6>
+                        </div>
+                    </div>
+
+                    <div class="swiper-slide">
+                        <div class="advantage">
+                            <div class="advantage__img_box">
+                                <img src="assets/img/advantage-8.svg" alt="">
+                            </div>
+                            <h6 class="advantage__title">Пакування, перепакування, палетування вантажу до міжнародного перевезення</h6>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="swiper-pagination"></div>
+            </div>
+        </section>
+    </div>
+    <div class="section__block">
+        <section class="section__content container">
+            <div class="section__title">
+                <h2>Варіанти доставки вантажу з Китаю</h2>
+            </div>
+
+            <div class="swiper-template">
+                <div class="swiper-wrapper">
+
+                    <div class="swiper-slide">
+                        <div class="template__card">
+                            <div class="template__img_box">
+                                <img src="assets/img/delivery-img-1.png" alt="">
+                            </div>
+                            <h4 class="template__title">Авто - звичайна</h4>
+                            <div class="template__subtitle">
+                                <p>9-15 днів</p>
+                                <p>від 5 кг</p>
+                            </div>
+                            <h6 class="template__price">від <span>2,5<span>$/кг</span></span></h6>
+                            <div class="template__buttons">
+                                <button type="button" class="btn btn-primary btn-small">Залишити заявку</button>
+                                <button type="button" class="btn btn-secondary btn-small">Детальніше</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="swiper-slide">
+                        <div class="template__card">
+                            <div class="template__img_box">
+                                <img src="assets/img/delivery-img-2.png" alt="">
+                            </div>
+                            <h4 class="template__title">Авто - прискорена</h4>
+                            <div class="template__subtitle">
+                                <p>9-15 днів</p>
+                                <p>від 5 кг</p>
+                            </div>
+                            <h6 class="template__price">від <span>2,5<span>$/кг</span></span></h6>
+                            <div class="template__buttons">
+                                <button type="button" class="btn btn-primary btn-small">Залишити заявку</button>
+                                <button type="button" class="btn btn-secondary btn-small">Детальніше</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="swiper-slide">
+                        <div class="template__card">
+                            <div class="template__img_box">
+                                <img src="assets/img/delivery-img-3.png" alt="">
+                            </div>
+                            <h4 class="template__title">Авіа</h4>
+                            <div class="template__subtitle">
+                                <p>9-15 днів</p>
+                                <p>від 5 кг</p>
+                            </div>
+                            <h6 class="template__price">від <span>2,5<span>$/кг</span></span></h6>
+                            <div class="template__buttons">
+                                <button type="button" class="btn btn-primary btn-small">Залишити заявку</button>
+                                <button type="button" class="btn btn-secondary btn-small">Детальніше</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="swiper-slide">
+                        <div class="template__card">
+                            <div class="template__img_box">
+                                <img src="assets/img/delivery-img-4.png" alt="">
+                            </div>
+                            <h4 class="template__title">З/д</h4>
+                            <div class="template__subtitle">
+                                <p>9-15 днів</p>
+                                <p>від 5 кг</p>
+                            </div>
+                            <h6 class="template__price">від <span>2,5<span>$/кг</span></span></h6>
+                            <div class="template__buttons">
+                                <button type="button" class="btn btn-primary btn-small">Залишити заявку</button>
+                                <button type="button" class="btn btn-secondary btn-small">Детальніше</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="swiper-slide">
+                        <div class="template__card">
+                            <div class="template__img_box">
+                                <img src="assets/img/delivery-img-5.png" alt="">
+                            </div>
+                            <h4 class="template__title">Море</h4>
+                            <div class="template__subtitle">
+                                <p>9-15 днів</p>
+                                <p>від 5 кг</p>
+                            </div>
+                            <h6 class="template__price">від <span>2,5<span>$/кг</span></span></h6>
+                            <div class="template__buttons">
+                                <button type="button" class="btn btn-primary btn-small">Залишити заявку</button>
+                                <button type="button" class="btn btn-secondary btn-small">Детальніше</button>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="swiper-pagination"></div>
+                <div class="swiper-template__arrows">
+                    <div class="swiper-button-prev"></div>
+                    <div class="swiper-button-next"></div>
+                </div>
+            </div>
+
+        </section>
+    </div>
+    <div class="section__block p-0">
+        <section class="section__content container">
+            <div class="section__title">
+                <h2>Послуги</h2>
+            </div>
+
+            <div class="swiper-template services">
+                <div class="swiper-wrapper">
+
+                    <div class="swiper-slide">
+                        <div class="template__card" style="background-image: url('assets/img/services-img-1.png');">
+                            <!-- <div class="template__img_box">
+                        <img src="assets/img/services-img-1.png" alt="">
+                    </div> -->
+                            <div class="template__card__content">
+                                <h4 class="template__title">Викуп товару</h4>
+                                <p class="template__description">Компанія - це повний комплекс логістичних послуг по доставці
+                                    вантажу з Китаю в Україну - збірні вантажі і цільні товарні партії, послуги посередника
+                                    TaoBao, КАРГО Китай-Україна</p>
+                                <button type="button" class="btn btn-secondary btn-small">Детальніше</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="swiper-slide">
+                        <div class="template__card" style="background-image: url('assets/img/services-img-2.png');">
+                            <div class="template__card__content">
+                                <h4 class="template__title">Страхування вантажу</h4>
+                                <p class="template__description">Компанія - це повний комплекс логістичних послуг по доставці
+                                    вантажу з Китаю в Україну - збірні вантажі і цільні товарні партії, послуги посередника
+                                    TaoBao, КАРГО Китай-Україна</p>
+                                <button type="button" class="btn btn-secondary btn-small">Детальніше</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="swiper-slide">
+                        <div class="template__card" style="background-image: url('assets/img/services-img-3.png');">
+                            <div class="template__card__content">
+                                <h4 class="template__title">Оренда складу</h4>
+                                <p class="template__description">Компанія - це повний комплекс логістичних послуг по доставці
+                                    вантажу з Китаю в Україну - збірні вантажі і цільні товарні партії, послуги посередника
+                                    TaoBao, КАРГО Китай-Україна</p>
+                                <button type="button" class="btn btn-secondary btn-small">Детальніше</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="swiper-slide">
+                        <div class="template__card" style="background-image: url('assets/img/services-img-4.png');">
+                            <div class="template__card__content">
+                                <h4 class="template__title">Переказ грошових коштів</h4>
+                                <p class="template__description">Компанія - це повний комплекс логістичних послуг по доставці
+                                    вантажу з Китаю в Україну - збірні вантажі і цільні товарні партії, послуги посередника
+                                    TaoBao, КАРГО Китай-Україна</p>
+                                <button type="button" class="btn btn-secondary btn-small">Детальніше</button>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="swiper-pagination"></div>
+                <div class="swiper-template__arrows">
+                    <div class="swiper-button-prev"></div>
+                    <div class="swiper-button-next"></div>
+                </div>
+            </div>
+
+        </section>
+    </div>
+
+    <div class="section__block">
+        <section class="section__content container">
+            <div class="section__title text-lg-start">
+                <h2>Про компанію</h2>
+            </div>
+        </section>
+
+        <section class="section__content container line">
+            <div class="section__title">
+                <h2>Поширені питання</h2>
+            </div>
+        </section>
+    </div>
+    <div class="section__block">
+        <section class="section__content container">
+            <div class="section__title">
+                <h2>Готові до співпраці?</h2>
+                <h3>Зареєструйте вантаж!</h3>
+            </div>
+        </section>
+    </div>
+
+
+</main>

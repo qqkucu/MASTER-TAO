@@ -1,0 +1,40 @@
+header {
+    position: relative;
+    background-color: $bg-primary
+}
+
+.header-nav {
+    @extend .container;
+    display: flex;
+    padding-top: 25px;
+    padding-bottom: 39px;
+    position: relative;
+
+    .btn {
+        padding: 13px 21px;
+    }
+}
+
+.mobile-container {
+    display: flex;
+    width: 100%;
+}
+
+.header-nav-list {
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    gap: 45px;
+    padding: 4px 12px 0 12px;
+
+    a {
+        color: $text-color;
+        text-decoration: none;
+    }
+}
+
+
+.hamburger {
+    padding: 0;
+    margin: 6px 0 0 0;
+}
